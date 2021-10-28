@@ -5,7 +5,7 @@ export VERSION_CONTROL=numbered
 BASE=$(pwd)
 
 if [ -n "$CODESPACES" ]; then
-	apt-get install -y neovim fzf
+	sudo apt-get install -y neovim fzf
 fi
 
 # shell config
