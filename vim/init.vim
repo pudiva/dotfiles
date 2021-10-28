@@ -20,7 +20,7 @@ set incsearch
 nnoremap <silent> <F12> :execute "set cc=" . (&cc == "" ? "81,73" : "")<CR>
 
 " filetypes with 2 space indentation
-au FileType ruby,eruby,yaml,json,html,javascript setl ts=2 sw=2 et
+au FileType ruby,eruby,yaml,json,markdown,html,javascript setl ts=2 sw=2 et
 
 " build graphviz .dot files
 au FileType dot setl mp=dot\ -Tpdf\ %\ >\ %.pdf\ \&&\ mupdf\ %.pdf
