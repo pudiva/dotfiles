@@ -9,6 +9,7 @@ if [ -n "$CODESPACES" ]; then
 fi
 
 # shell config
+ln -bsT $BASE/profile			$HOME/.profile
 ln -bsT $BASE/bash_profile		$HOME/.bash_profile
 ln -bsT $BASE/bashrc			$HOME/.bashrc
 ln -bsT $BASE/inputrc			$HOME/.inputrc
