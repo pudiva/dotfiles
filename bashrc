@@ -1,4 +1,5 @@
-# .bashrc
+#!/bin/sh
+# pudiva's ~/.bashrc
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return

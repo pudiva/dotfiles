@@ -1,4 +1,5 @@
-" pudiva's vimrc
+" pudiva's ~/.vimrc
+
 set backspace=
 set history=666
 set ruler

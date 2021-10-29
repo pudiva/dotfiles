@@ -1,3 +1,5 @@
+# pudiva's ~/.inputrc
+
 $include /etc/inputrc
 set editing-mode vi
 #set keymap vi
