@@ -23,3 +23,6 @@ ln -bsT $BASE/vim			$HOME/.local/share/nvim/site
 ln -bsT $BASE/vim			$HOME/.config/nvim
 ln -bsT .vim/init.vim			$HOME/.vimrc
 nvim +PlugInstall +qall
+
+# other stuff
+ln -bsT $BASE/alacritty.yml		$HOME/.alacritty.yml
