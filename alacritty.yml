@@ -8,6 +8,10 @@ font:
 window:
   opacity: 0.999
 
+# Spawn new windows instead of processes (OSX)
+key_bindings:
+  - { key: N, mods: Command, action: CreateNewWindow }
+
 # XTerm's default colors
 colors:
   primary:
