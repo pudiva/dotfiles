@@ -5,7 +5,8 @@ font:
 
 # fix OSX mission slowdown
 # See: https://github.com/alacritty/alacritty/issues/4474
-background_opacity: 0.999
+window:
+  opacity: 0.999
 
 # XTerm's default colors
 colors:
