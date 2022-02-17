@@ -3,26 +3,42 @@
 set -x
 export VERSION_CONTROL=numbered
 BASE=$(pwd)
+ln="ln -bsT"
 
-if [ -n "$CODESPACES" ]; then
+while getopts ":i" opt
+do
+	case $opt in
+		i)
+			ln="$ln -i"
+			set +x
+			;;
+		\?)
+			echo "Invalid option: -$OPTARG" >&2
+			exit -1
+			;;
+	esac
+done
+
+if [ -n "$CODESPACES" ]
+then
 	sudo apt-get update
 	sudo apt-get install -y neovim fzf ripgrep
 fi
 
 # shell config
-ln -bsT $BASE/profile			$HOME/.profile
-ln -bsT $BASE/bash_profile		$HOME/.bash_profile
-ln -bsT $BASE/bashrc			$HOME/.bashrc
-ln -bsT $BASE/inputrc			$HOME/.inputrc
+$ln $BASE/profile			$HOME/.profile
+$ln $BASE/bash_profile			$HOME/.bash_profile
+$ln $BASE/bashrc			$HOME/.bashrc
+$ln $BASE/inputrc			$HOME/.inputrc
 
 # vim config
 mkdir -p $HOME/.config
 mkdir -p $HOME/.local/share/nvim
-ln -bsT $BASE/vim			$HOME/.vim
-ln -bsT $BASE/vim			$HOME/.local/share/nvim/site
-ln -bsT $BASE/vim			$HOME/.config/nvim
-ln -bsT .vim/init.vim			$HOME/.vimrc
+$ln $BASE/vim				$HOME/.vim
+$ln $BASE/vim				$HOME/.local/share/nvim/site
+$ln $BASE/vim				$HOME/.config/nvim
+$ln .vim/init.vim			$HOME/.vimrc
 nvim +PlugInstall +qall
 
 # other stuff
-ln -bsT $BASE/alacritty.yml		$HOME/.alacritty.yml
+$ln $BASE/alacritty.yml			$HOME/.alacritty.yml
