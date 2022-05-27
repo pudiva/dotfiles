@@ -1,7 +1,7 @@
 # pudiva's ~/.alacritty.yml
 
 font:
-  size: 20
+  size: 18
 
 # fix OSX mission slowdown
 # See: https://github.com/alacritty/alacritty/issues/4474
