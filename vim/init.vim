@@ -61,6 +61,8 @@ endif
 
 call plug#begin('~/.vim/plugged')
 Plug 'junegunn/vim-plug'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'vim-test/vim-test'
 Plug 'tikhomirov/vim-glsl'
 call plug#end()
