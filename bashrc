@@ -14,3 +14,6 @@ alias grep="grep --color=auto"
 alias diff="diff --color=auto"
 export FZF_DEFAULT_COMMAND="rg --files --hidden --follow"
 #alias ssh="TERM=xterm-256color ssh"
+
+CHRUBY_PATH=/usr/local/share/chruby/chruby.sh
+[ -f $CHRUBY_PATH ] && . $CHRUBY_PATH
