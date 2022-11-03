@@ -65,7 +65,11 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'vim-test/vim-test'
 Plug 'tikhomirov/vim-glsl'
+Plug 'ojroques/vim-oscyank', {'branch': 'main'}
 call plug#end()
+
+" OSC yank on + register
+autocmd TextYankPost * if v:event.operator is 'y' && v:event.regname is '+' | execute 'OSCYankReg +' | endif
 
 " test on F11
 au FileType ruby nmap <silent> <F11> :TestNearest<CR>
