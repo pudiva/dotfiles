@@ -16,6 +16,7 @@ endif
 set ignorecase
 set smartcase
 set incsearch
+set nofoldenable
 
 " color column on F12
 nnoremap <silent> <F12> :execute "set cc=" . (&cc == "" ? "81,73" : "")<CR>
@@ -66,7 +67,12 @@ Plug 'junegunn/fzf.vim'
 Plug 'vim-test/vim-test'
 Plug 'tikhomirov/vim-glsl'
 Plug 'ojroques/vim-oscyank', {'branch': 'main'}
+Plug 'godlygeek/tabular'
+Plug 'preservim/vim-markdown'
 call plug#end()
+
+" fix list indentation on vim-markdown
+let g:vim_markdown_new_list_item_indent = 2
 
 " OSC yank on + register
 autocmd TextYankPost * if v:event.operator is 'y' && v:event.regname is '+' | execute 'OSCYankReg +' | endif
