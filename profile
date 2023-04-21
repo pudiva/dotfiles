@@ -13,6 +13,9 @@ path_prepend(){
 	fi
 }
 
+export GOPATH="$HOME/go"
+
+path_prepend "$GOPATH/bin"
 path_prepend "$HOME/.local/bin"
 path_prepend "$HOME/bin"
 [ -f "$HOME/.secrets" ] && . "$HOME/.secrets"
