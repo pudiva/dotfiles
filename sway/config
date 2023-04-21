@@ -178,5 +178,6 @@ bar {
 
 ### Quirks
 for_window [title="Firefox — Sharing Indicator"] floating enable;
+for_window [app_id="zoom"] floating enable
 # remove stupid limits on floating window size
 floating_maximum_size -1 x -1
