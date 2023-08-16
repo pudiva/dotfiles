@@ -22,7 +22,7 @@ done
 if [ -n "$CODESPACES" ]
 then
 	sudo apt-get update
-	sudo apt-get install -y neovim fzf ripgrep bat
+	sudo apt-get install -y neovim fzf ripgrep bat netcat
 fi
 
 # shell config
