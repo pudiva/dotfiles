@@ -1,8 +1,9 @@
 # pudiva's ~/.alacritty.yml
-#
 
 font:
   size: 18
+  normal:
+    family: monospace
 
 # Spawn new windows instead of processes (OSX)
 key_bindings:
