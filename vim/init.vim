@@ -27,6 +27,9 @@ au FileType ruby,eruby,yaml,json,markdown,html,javascript setl ts=2 sw=2 et
 " build graphviz .dot files
 au FileType dot setl mp=dot\ -Tpdf\ %\ >\ %.pdf\ \&&\ mupdf\ %.pdf
 
+iab xdate <c-r>=strftime("%Y-%m-%d")<cr>
+iab xjn __<c-r>=strftime("%Y-%m-%d")<cr>__<Esc>hi
+
 " nvim specific
 if has('nvim')
 	set runtimepath^=~/.vim runtimepath+=~/.vim/after
