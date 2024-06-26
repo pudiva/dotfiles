@@ -29,6 +29,7 @@ au FileType dot setl mp=dot\ -Tpdf\ %\ >\ %.pdf\ \&&\ mupdf\ %.pdf
 
 iab xdate <c-r>=strftime("%Y-%m-%d")<cr>
 iab xjn __<c-r>=strftime("%Y-%m-%d")<cr>__<Esc>hi
+iab xjt <Esc>:let t=v:lang<cr>:lan C<cr>i<c-r>=strftime("%Y-%m-%d %a")<cr><cr>--------------<cr><cr><Esc>:exe 'lan' t<cr>i
 
 " nvim specific
 if has('nvim')
