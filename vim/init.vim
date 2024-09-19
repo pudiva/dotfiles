@@ -7,6 +7,9 @@ set hls
 set vb
 set mouse=a
 
+colorscheme vim
+set notermguicolors
+
 if has("patch-8.1.0360")
 	set diffopt+=internal
 	set diffopt+=algorithm:patience
@@ -46,11 +49,11 @@ endif
 
 " terminal-specific
 if $TERM =~ '^\(alacritty\|st\)'
-	if exists('+termguicolors')
-		let &t_8f="[38;2;%lu;%lu;%lum"
-		let &t_8b="[48;2;%lu;%lu;%lum"
-		set termguicolors
-	endif
+	"if exists('+termguicolors')
+	"	let &t_8f="[38;2;%lu;%lu;%lum"
+	"	let &t_8b="[48;2;%lu;%lu;%lum"
+	"	set termguicolors
+	"endif
 
 	if !has('nvim') && !has('gui_running')
 		set background=dark

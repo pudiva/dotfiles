@@ -12,6 +12,8 @@ set $menu	dmenu_path | dmenu | xargs swaymsg exec --
 ### Output configuration
 # See `swaymsg -t get_outputs`
 output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output eDP-1 pos 260 1440
+output HDMI-A-1 pos 0 0
 #output DP-1 pos 0 0
 #output LVDS-1 pos 595 1440
 
@@ -32,14 +34,10 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 #	     timeout 600 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
 #	     before-sleep 'swaylock -p -f -c 000000'
 
-### XWayland
 xwayland force
-
-### mako notifier
 exec mako
-
-### bluetooth applet
 exec blueman-applet
+exec pipewire
 
 ### Input configuration
 # See `swaymsg -t get_inputs` and `man 5 sway-input`
