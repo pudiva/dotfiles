@@ -38,6 +38,7 @@ xwayland force
 exec mako
 exec blueman-applet
 exec pipewire
+exec dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway sway
 
 ### Input configuration
 # See `swaymsg -t get_inputs` and `man 5 sway-input`
