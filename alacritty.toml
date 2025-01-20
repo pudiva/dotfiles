@@ -1,0 +1,12 @@
+[[keyboard.bindings]]
+action = "CreateNewWindow"
+key = "N"
+mods = "Command"
+
+[font]
+size = 18
+
+[font.normal]
+family = "monospace"
+
+[keyboard]

@@ -54,5 +54,5 @@ dotlink inputrc		.inputrc
 dotlink vim		.config/nvim
 dotlink vim		.vim
 dotlink vim/init.vim	.vimrc
-dotlink alacritty.yml	.alacritty.yml
+dotlink alacritty.toml	.alacritty.toml
 dotlink sway		.config/sway
