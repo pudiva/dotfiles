@@ -67,10 +67,22 @@ input 1133:49948:Logitech_USB_Keyboard {
 	xkb_variant		intl
 }
 
-# thinkpad P14s
+# thinkpad x220
 input 1:1:AT_Translated_Set_2_keyboard {
+	xkb_layout		br
+	xkb_variant		thinkpad
+}
+
+# miku keyboard and mouse
+input 12625:16401:Akko_2.4G_Wireless_Keyboard {
 	xkb_layout		us
 	xkb_variant		intl
+}
+input 12625:16401:Akko_2.4G_Wireless_Keyboard_Mouse {
+	left_handed		enabled
+}
+input 13652:64298:Compx_Akko_8K__Receiver {
+	left_handed		enabled
 }
 
 ### Key bindings
