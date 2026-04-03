@@ -2,7 +2,7 @@
 # This script assumes coreutils
 set +x
 export VERSION_CONTROL=numbered
-BASE=$(pwd)
+BASE=`realpath --relative-to "$HOME" "`pwd`"`
 ln='ln -sT'
 
 while getopts ":ibf" opt
