@@ -94,6 +94,9 @@ floating_modifier $mod normal
 bindsym $mod+Shift+c	reload
 bindsym $mod+Shift+e	exec swaymsg exit
 
+# Print screen with grim
+bindsym Print exec grim
+
 # Moving around:
 bindsym $mod+$left	focus left
 bindsym $mod+$down	focus down
