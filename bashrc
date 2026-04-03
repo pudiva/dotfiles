@@ -12,3 +12,6 @@ alias diff="diff --color=auto"
 
 CHRUBY_PATH=/usr/local/share/chruby/chruby.sh
 [ -f $CHRUBY_PATH ] && . $CHRUBY_PATH
+
+EMSDK_PATH=$HOME/opt/emsdk/emsdk_env.sh
+[ -f $EMSDK_PATH ] && EMSDK_QUIET=1 . $EMSDK_PATH
