@@ -45,12 +45,12 @@ exec dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY 
 #input 2:7:SynPS/2_Synaptics_TouchPad {
 input type:touchpad {
 	dwt			disabled
-	dwtp			disabled
+	#dwtp			disabled
 	tap			disabled
 	natural_scroll		disabled
 	scroll_method		two_finger
 	scroll_factor		1
-	accel_profile		flat
+	accel_profile		adaptive
 }
 
 input type:pointer {
