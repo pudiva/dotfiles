@@ -1,5 +1,9 @@
 " satana's ~/.vimrc
 
+" modelines are a security risk
+set nomodeline
+set modelines=0
+
 set backspace=
 set history=666
 set ruler
