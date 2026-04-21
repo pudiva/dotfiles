@@ -63,6 +63,10 @@ input 12625:16401:Akko_2.4G_Wireless_Keyboard {
 	xkb_layout		us
 	xkb_variant		intl
 }
+input 12625:16405:ROYUAN_Akko_Multi-modes_Keyboard-B {
+	xkb_layout		us
+	xkb_variant		intl
+}
 input 12625:16401:Akko_2.4G_Wireless_Keyboard_Mouse {
 	left_handed		enabled
 }
