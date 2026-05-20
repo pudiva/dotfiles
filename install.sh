@@ -40,13 +40,6 @@ then
 		tic -xe alacritty,alacritty-direct /dev/stdin
 fi
 
-plug_vim="vim/autoload/plug.vim"
-plug_vim_url='https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
-if [ ! -f "$plug_vim" ]; then
-	curl -fLo "$plug_vim" --create-dirs "$plug_vim_url" && \
-		nvim +PlugInstall +qa
-fi
-
 dotlink profile		.profile
 dotlink bash_profile	.bash_profile
 dotlink bashrc		.bashrc
@@ -56,3 +49,10 @@ dotlink vim		.vim
 dotlink vim/init.vim	.vimrc
 dotlink alacritty.toml	.alacritty.toml
 dotlink sway		.config/sway
+
+plug_vim="vim/autoload/plug.vim"
+plug_vim_url='https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+if [ ! -f "$plug_vim" ]; then
+	curl -fLo "$plug_vim" --create-dirs "$plug_vim_url" && \
+		nvim +PlugInstall +qa
+fi
